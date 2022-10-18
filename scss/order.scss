@@ -1,0 +1,57 @@
+.order {
+  background-color: $backgroundOrderColor;
+  padding: 50px 15px;
+  text-align: center;
+
+  &__image {
+    width: 200px;
+    height: 200px;
+  }
+
+  &__heading {
+    margin-top: 40px;
+    margin-bottom: 18px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -0.25px;
+    color: $fontPrimaryColor;
+  }
+
+  &__description {
+    margin-bottom: 80px;
+    text-align: left;
+    font-size: 22px;
+    line-height: 32px;
+    color: $fontPrimaryColor;
+  }
+}
+
+.form {
+  &__send-email {
+    margin-bottom: 12px;
+    padding: 17px 0;
+    width: 100%;
+    border: 1px solid $borderColorEmailInput;
+    border-radius: 2px;
+
+    &::placeholder {
+      font-size: 18px;
+      line-height: 13px;
+      text-align: center;
+      color: $fontPrimaryColor;
+    }
+  }
+
+  &__submit-button {
+    margin-bottom: 10px;
+  }
+
+  &__caption-button {
+    text-align: justify;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: $fontCaptionFormColor;
+  }
+}
