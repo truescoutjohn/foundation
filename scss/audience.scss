@@ -4,11 +4,31 @@
   text-align: center;
   line-height: 34px;
 
+  @media screen and (min-width: calc($tablet + 1px)) {
+    padding: 108px 0 110px;
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: calc($tablet + 1px)) {
+      flex-direction: row;
+      column-gap: 10px;
+      margin: 0 auto;
+      width: 330px;
+    }
+  }
+
   &__caption {
     margin-bottom: 17px;
     font-weight: 700;
     font-size: 22px;
     color: $fontPrimaryColor;
+
+    @media screen and (min-width: calc($tablet + 1px)) {
+      margin-bottom: 24px;
+    }
   }
 
   &__heading {
@@ -18,17 +38,46 @@
     line-height: 40px;
     letter-spacing: -0.357143px;
     color: $fontPrimaryColor;
+
+    @media screen and (min-width: calc($tablet + 1px)) {
+      margin: 0 auto;
+      margin-bottom: 30px;
+      width: 555px;
+      font-weight: 700;
+      font-size: 56px;
+      line-height: 56px;
+      text-align: center;
+      letter-spacing: -0.5px;
+    }
   }
 
   &__description {
     margin-bottom: 30px;
     font-size: 24px;
     color: #2b292d;
+
+    @media screen and (min-width: calc($tablet + 1px)) {
+      margin: 0 auto;
+      margin-bottom: 34px;
+      width: 555px;
+      text-align: center;
+    }
   }
 }
 
 .features {
-  &__block {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: calc($tablet + 1px)) {
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 30px;
+    max-width: 81%;
+    margin: 0 auto;
+  }
+
+  &__card {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -52,7 +101,7 @@
     }
   }
 
-  &__block:not(.features__block:last-of-type) {
+  &__card:not(.features__block:last-of-type) {
     margin-bottom: 15px;
   }
 

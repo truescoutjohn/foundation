@@ -2,19 +2,18 @@
   display: flex;
   flex-wrap: wrap;
   row-gap: 5px;
+  align-items: center;
+  padding: 30px 0 81px;
+
+  @media screen and (min-width: calc($tablet + 1px)) {
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 81%;
+    row-gap: 0px;
+  }
 
   &__logo {
-    max-width: 100%;
     filter: brightness(0%);
-
-    &-wrapper {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-basis: 106px;
-      height: 94px;
-      background-color: #fff;
-      box-shadow: inset -1px 0px 0px rgba(200, 200, 200, 0.5);
-    }
   }
 }

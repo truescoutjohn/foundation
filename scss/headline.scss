@@ -1,0 +1,65 @@
+.headline {
+  position: relative;
+
+  &-wrapper {
+    position: relative;
+    z-index: 2;
+    padding: 35px 15px 0;
+
+    @media screen and (min-width: calc($tablet + 1px)) {
+      margin: 0 auto;
+      padding: 0;
+      max-width: 81%;
+    }
+  }
+
+  &__heading {
+    margin-bottom: 24px;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 50px;
+    letter-spacing: -0.3125px;
+    color: $fontPrimaryColor;
+
+    @media screen and (min-width: calc($tablet + 1px)) {
+      width: 754px;
+      font-size: 80px;
+      line-height: 78px;
+      letter-spacing: -0.5px;
+    }
+  }
+
+  &__description-text {
+    margin-bottom: 30px;
+    font-size: 24px;
+    line-height: 34px;
+    color: $fontPrimaryColor;
+
+    @media screen and (min-width: calc($tablet + 1px)) {
+      width: 456px;
+      margin-bottom: 58px;
+    }
+  }
+
+  &__image {
+    width: 100%;
+
+    @media screen and (min-width: calc($tablet + 1px)) {
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      right: 25px;
+      width: 796px;
+      height: 448px;
+    }
+  }
+
+  @media screen and (min-width: calc($tablet + 1px)) {
+    &__button {
+      margin-bottom: 126px;
+      &:first-of-type {
+        margin-right: 10px;
+      }
+    }
+  }
+}

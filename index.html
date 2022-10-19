@@ -61,7 +61,7 @@
                 </a>
               </div>
             </nav>
-            <button class="button button_get-started">Get Started</button>
+            <button class="header__button button button_get-started">Get Started</button>
             <button class="header__burger">
               <img
                 src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-hamburger.png"
@@ -70,81 +70,76 @@
             </button>
           </div>
         </div>
-        <div class="welcome">
-          <div class="welcome-wrapper">
-            <h1 class="welcome__heading">Build stunning websites & apps.</h1>
-            <p class="welcome__description-text">
+        <div class="headline">
+          <div class="headline-wrapper">
+            <h1 class="headline__heading">Build stunning websites & apps.</h1>
+            <p class="headline__description-text">
               Create live segments and target the right people for messages based on their
               behaviors.
             </p>
-            <button class="button button_get-started">Get Started</button>
-            <button class="button button_learn-more">Learn More</button>
+            <button class="button button_get-started headline__button">Get Started</button>
+            <button class="button button_learn-more headline__button">Learn More</button>
           </div>
           <img
             src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/ouch.png"
             alt="reading"
-            class="welcome__image"
+            class="headline__image"
           />
         </div>
       </header>
       <main class="main">
         <section class="about">
-          <div class="about-wrapper">
-            <h3 class="about-wrapper__heading">What is it about?</h3>
-            <p class="about-wrapper__description">
-              Building a website for a startup that looks amazing is not a rocket science anymore.
-            </p>
-          </div>
-          <div class="about-wrapper">
-            <h3 class="about-wrapper__heading">Who is it for?</h3>
-            <p class="about-wrapper__description">
-              Startups, small companies and teams, entrepreneurs and web developers.
-            </p>
+          <div class="about-content">
+            <div class="about-wrapper">
+              <h3 class="about-wrapper__heading">What is it about?</h3>
+              <p class="about-wrapper__description">
+                Building a website for a startup that looks amazing is not a rocket science anymore.
+              </p>
+            </div>
+            <div class="about-wrapper">
+              <h3 class="about-wrapper__heading">Who is it for?</h3>
+              <p class="about-wrapper__description">
+                Startups, small companies and teams, entrepreneurs and web developers.
+              </p>
+            </div>
           </div>
         </section>
         <section class="customers">
-          <div class="customers__logo-wrapper">
-            <img
-              src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/logo-nyt.png"
-              alt="nyt"
-              class="customers__logo"
-            />
-          </div>
-          <div class="customers__logo-wrapper">
-            <img
-              src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/logo-forbes.png"
-              alt="forbes"
-              class="customers__logo"
-            />
-          </div>
-          <div class="customers__logo-wrapper">
-            <img
-              src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/logo-apple.png"
-              alt="apple"
-              class="customers__logo"
-            />
-          </div>
-          <div class="customers__logo-wrapper">
-            <img
-              src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/logo-mashable.png"
-              alt="mashable"
-              class="customers__logo"
-            />
-          </div>
-          <div class="customers__logo-wrapper">
-            <img
-              src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/logo-wsj.png"
-              alt="wsj"
-              class="customers__logo"
-            />
-          </div>
-          <div class="customers__logo-wrapper">
-            <img
-              src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/logo-google.png"
-              alt="google"
-              class="customers__logo"
-            />
-          </div>
+          <img
+            src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/logo-nyt.png"
+            alt="nyt"
+            class="customers__logo"
+          />
+
+          <img
+            src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/logo-forbes.png"
+            alt="forbes"
+            class="customers__logo"
+          />
+
+          <img
+            src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/logo-apple.png"
+            alt="apple"
+            class="customers__logo"
+          />
+
+          <img
+            src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/logo-mashable.png"
+            alt="mashable"
+            class="customers__logo"
+          />
+
+          <img
+            src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/logo-wsj.png"
+            alt="wsj"
+            class="customers__logo"
+          />
+
+          <img
+            src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/logo-google.png"
+            alt="google"
+            class="customers__logo"
+          />
         </section>
         <section class="audience">
           <p class="audience__caption">Engage Visitors</p>
@@ -152,10 +147,12 @@
           <p class="audience__description">
             Early stage company? Eligible applicants get all of our products for just $49 a month.
           </p>
-          <button class="button button_get-started">Get Started</button>
-          <button class="button button_learn-more">Learn More</button>
+          <div class="audience__buttons">
+            <button class="button button_get-started">Get Started</button>
+            <button class="button button_learn-more">Learn More</button>
+          </div>
           <div class="features">
-            <div class="features__block">
+            <div class="features__card">
               <img
                 src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/user-1.png"
                 alt="image"
@@ -163,7 +160,7 @@
               />
               <p class="features__caption">Developers</p>
             </div>
-            <div class="features__block features__block_main">
+            <div class="features__card features__card_main">
               <img
                 src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/user-2.png"
                 alt="image"
@@ -171,7 +168,7 @@
               />
               <p class="features__caption features__caption_main">Entertainment</p>
             </div>
-            <div class="features__block">
+            <div class="features__card">
               <img
                 src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/user-3.png"
                 alt="image"
@@ -179,7 +176,7 @@
               />
               <p class="features__caption">Athletes</p>
             </div>
-            <div class="features__block">
+            <div class="features__card">
               <img
                 src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/user-4.png"
                 alt="image"
@@ -190,30 +187,34 @@
           </div>
         </section>
         <section class="order">
-          <img
-            src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/illustration-window.png"
-            alt="Ilustration Window"
-            class="order__image"
-          />
-          <h2 class="order__heading">Start your free trial.</h2>
-          <p class="order__description">
-            Get notified about company updates, news and blog posts. We hate spam.
-          </p>
-          <form action="#" type="get" class="form">
-            <input
-              type="email"
-              name="email"
-              class="form__send-email"
-              placeholder="Enter your email"
+          <div class="order-content">
+            <img
+              src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/illustration-window.png"
+              alt="Ilustration Window"
+              class="order__image"
             />
-            <button type="submit" class="button form__submit-button button_get-started">
-              Get Started
-            </button>
-            <p class="form__caption-button">
-              Free 14-day trial · Easy setup · Cancel any time. Check out
-              <a href="#">Terms of Use</a>
-            </p>
-          </form>
+            <div class="order__right-column">
+              <h2 class="order__heading">Start your free trial.</h2>
+              <p class="order__description">
+                Get notified about company updates, news and blog posts. We hate spam.
+              </p>
+              <form action="#" type="get" class="form">
+                <input
+                  type="email"
+                  name="email"
+                  class="form__send-email"
+                  placeholder="Enter your email"
+                />
+                <button type="submit" class="button form__submit-button button_get-started">
+                  Get Started
+                </button>
+              </form>
+              <p class="form__caption-button">
+                Free 14-day trial · Easy setup · Cancel any time. Check out
+                <a href="#">Terms of Use</a>
+              </p>
+            </div>
+          </div>
         </section>
       </main>
       <footer class="footer">
