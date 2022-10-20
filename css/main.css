@@ -228,6 +228,9 @@ body {
     height: 448px;
   }
 }
+.headline__button {
+  margin-bottom: 15px;
+}
 @media screen and (min-width: 769px) {
   .headline__button {
     margin-bottom: 126px;
@@ -310,7 +313,7 @@ body {
   .audience__buttons {
     flex-direction: row;
     column-gap: 10px;
-    margin: 0 auto;
+    margin: 0 auto 111px;
     width: 330px;
   }
 }
@@ -368,6 +371,9 @@ body {
 .features {
   display: flex;
   flex-direction: column;
+}
+.features__buttons {
+  margin-bottom: 111px;
 }
 @media screen and (min-width: 769px) {
   .features {

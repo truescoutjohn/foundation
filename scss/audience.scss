@@ -15,7 +15,7 @@
     @media screen and (min-width: calc($tablet + 1px)) {
       flex-direction: row;
       column-gap: 10px;
-      margin: 0 auto;
+      margin: 0 auto 111px;
       width: 330px;
     }
   }
@@ -78,6 +78,10 @@
 .features {
   display: flex;
   flex-direction: column;
+
+  &__buttons {
+    margin-bottom: 111px;
+  }
 
   @media screen and (min-width: calc($tablet + 1px)) {
     flex-direction: row;
