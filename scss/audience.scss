@@ -23,10 +23,19 @@
   &__button {
     &_get-started {
       margin-bottom: 12px;
+
+      @media screen and (min-width: calc($tablet + 1px)) {
+        margin-bottom: 0;
+      }
     }
 
     &_learn-more {
       color: $fontPrimaryColor;
+      margin-bottom: 33px;
+
+      @media screen and (min-width: calc($tablet + 1px)) {
+        margin-bottom: 0;
+      }
     }
   }
 
@@ -34,6 +43,7 @@
     margin-bottom: 17px;
     font-weight: 700;
     font-size: 22px;
+    line-height: 34px;
     color: $fontPrimaryColor;
 
     @media screen and (min-width: calc($tablet + 1px)) {
@@ -64,6 +74,7 @@
   &__description {
     margin-bottom: 30px;
     font-size: 24px;
+    line-height: 34px;
     color: #2b292d;
 
     @media screen and (min-width: calc($tablet + 1px)) {

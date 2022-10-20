@@ -43,7 +43,6 @@ body {
   color: #ffffff;
 }
 .button_learn-more {
-  margin-bottom: 33px;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.00001) 100%), #ffffff;
   background-blend-mode: overlay, normal;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
@@ -320,13 +319,25 @@ body {
 .audience__button_get-started {
   margin-bottom: 12px;
 }
+@media screen and (min-width: 769px) {
+  .audience__button_get-started {
+    margin-bottom: 0;
+  }
+}
 .audience__button_learn-more {
   color: #2b292d;
+  margin-bottom: 33px;
+}
+@media screen and (min-width: 769px) {
+  .audience__button_learn-more {
+    margin-bottom: 0;
+  }
 }
 .audience__caption {
   margin-bottom: 17px;
   font-weight: 700;
   font-size: 22px;
+  line-height: 34px;
   color: #2b292d;
 }
 @media screen and (min-width: 769px) {
@@ -357,6 +368,7 @@ body {
 .audience__description {
   margin-bottom: 30px;
   font-size: 24px;
+  line-height: 34px;
   color: #2b292d;
 }
 @media screen and (min-width: 769px) {
