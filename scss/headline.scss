@@ -56,6 +56,11 @@
   }
   &__button {
     margin-bottom: 15px;
+
+    &:last-of-type {
+      margin-bottom: 33px;
+    }
+
     @media screen and (min-width: calc($tablet + 1px)) {
       margin-bottom: 126px;
       &:first-of-type {
