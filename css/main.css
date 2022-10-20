@@ -432,10 +432,15 @@ body {
   text-align: center;
 }
 @media screen and (min-width: 769px) {
+  .order {
+    padding: 0;
+  }
+}
+@media screen and (min-width: 769px) {
   .order-content {
     display: flex;
     padding: 73px 230px 72px 224px;
-    justify-content: space-between;
+    column-gap: 121px;
   }
 }
 @media screen and (min-width: 769px) {
@@ -464,7 +469,7 @@ body {
 }
 @media screen and (min-width: 769px) {
   .order__heading {
-    margin: 0;
+    margin-top: 33px;
     margin-bottom: 12px;
     text-align: left;
   }

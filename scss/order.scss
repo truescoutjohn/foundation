@@ -3,13 +3,18 @@
   padding: 50px 15px;
   text-align: center;
 
+  @media screen and (min-width: calc($tablet + 1px)) {
+    padding: 0;
+  }
+
   &-content {
     @media screen and (min-width: calc($tablet + 1px)) {
       display: flex;
       padding: 73px 230px 72px 224px;
-      justify-content: space-between;
+      column-gap: 121px;
     }
   }
+
   @media screen and (min-width: calc($tablet + 1px)) {
     &__right-column {
       flex-basis: 39%;
@@ -36,7 +41,7 @@
     color: $fontPrimaryColor;
 
     @media screen and (min-width: calc($tablet + 1px)) {
-      margin: 0;
+      margin-top: 33px;
       margin-bottom: 12px;
       text-align: left;
     }
