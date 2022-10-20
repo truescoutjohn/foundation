@@ -1,7 +1,6 @@
 .customers {
   display: flex;
   flex-wrap: wrap;
-  row-gap: 5px;
   align-items: center;
   padding: 30px 0 81px;
 
@@ -20,11 +19,11 @@
     flex-basis: 106px;
     height: 94px;
     background-color: #fff;
-    box-shadow: inset -1px 0px 0px rgba(200, 200, 200, 0.5);
+    border: 1px solid rgba(200, 200, 200, 0.5);
 
     @media screen and (min-width: calc($tablet + 1px)) {
       flex-basis: auto;
-      box-shadow: none;
+      border: none;
     }
   }
 
