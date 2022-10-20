@@ -30,7 +30,7 @@
   <body>
     <div class="page">
       <header class="header">
-        <div class="header-wrapper">
+        <div class="header__wrapper">
           <div class="logo">
             <img
               src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon.png"
@@ -42,8 +42,8 @@
               <span class="logo__description">Startup landing template</span>
             </div>
           </div>
-          <div class="navigation-wrapper">
-            <nav class="navigation">
+          <div class="navigation">
+            <nav class="navigation__wrapper">
               <div class="navigation__item">
                 <a href="#" class="navigation__link">Home</a>
               </div>
@@ -71,7 +71,7 @@
           </div>
         </div>
         <div class="headline">
-          <div class="headline-wrapper">
+          <div class="headline__wrapper">
             <h1 class="headline__heading">Build stunning websites & apps.</h1>
             <p class="headline__description-text">
               Create live segments and target the right people for messages based on their
@@ -89,57 +89,64 @@
       </header>
       <main class="main">
         <section class="about">
-          <div class="about-content">
-            <div class="about-wrapper">
-              <h3 class="about-wrapper__heading">What is it about?</h3>
-              <p class="about-wrapper__description">
+          <div class="about__content">
+            <div class="about__block-wrapper">
+              <h3 class="about__block-heading">What is it about?</h3>
+              <p class="about__block-description">
                 Building a website for a startup that looks amazing is not a rocket science anymore.
               </p>
             </div>
-            <div class="about-wrapper">
-              <h3 class="about-wrapper__heading">Who is it for?</h3>
-              <p class="about-wrapper__description">
+            <div class="about__block-wrapper">
+              <h3 class="about__block-heading">Who is it for?</h3>
+              <p class="about__block-description">
                 Startups, small companies and teams, entrepreneurs and web developers.
               </p>
             </div>
           </div>
         </section>
         <section class="customers">
-          <img
-            src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/logo-nyt.png"
-            alt="nyt"
-            class="customers__logo"
-          />
-
-          <img
-            src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/logo-forbes.png"
-            alt="forbes"
-            class="customers__logo"
-          />
-
-          <img
-            src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/logo-apple.png"
-            alt="apple"
-            class="customers__logo"
-          />
-
-          <img
-            src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/logo-mashable.png"
-            alt="mashable"
-            class="customers__logo"
-          />
-
-          <img
-            src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/logo-wsj.png"
-            alt="wsj"
-            class="customers__logo"
-          />
-
-          <img
-            src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/logo-google.png"
-            alt="google"
-            class="customers__logo"
-          />
+          <div class="customer__wrapper-logo">
+            <img
+              src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/logo-nyt.png"
+              alt="nyt"
+              class="customers__logo"
+            />
+          </div>
+          <div class="customers__wrapper-logo">
+            <img
+              src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/logo-forbes.png"
+              alt="forbes"
+              class="customers__logo"
+            />
+          </div>
+          <div class="customers__wrapper-logo">
+            <img
+              src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/logo-apple.png"
+              alt="apple"
+              class="customers__logo"
+            />
+          </div>
+          <div class="customers__wrapper-logo">
+            <img
+              src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/logo-mashable.png"
+              alt="mashable"
+              class="customers__logo"
+            />
+          </div>
+          <div class="customers__wrapper-logo">
+            <img
+              src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/logo-wsj.png"
+              alt="wsj"
+              class="customers__logo"
+            />
+          </div>
+          <div class="customers__wrapper-logo">
+            <img
+              src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/logo-google.png"
+              alt="google"
+              class="customers__logo"
+            />
+          </div>
         </section>
         <section class="audience">
           <p class="audience__caption">Engage Visitors</p>
@@ -323,8 +330,3 @@
     </div>
   </body>
 </html>
-<nav class="navigation">
-  <div class="navigation__item"><a href="#" class="navigation__link">Link 1</a></div>
-  <div class="navigation__item"><a href="#" class="navigation__link">Link 2</a></div>
-  <div class="navigation__item"><a href="#" class="navigation__link">Link 3</a></div>
-</nav>
