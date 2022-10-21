@@ -457,7 +457,7 @@ body {
   }
 }
 @media screen and (min-width: 769px) {
-  .order-content {
+  .order__content {
     display: flex;
     padding: 73px 230px 72px 224px;
     column-gap: 121px;
@@ -653,4 +653,4 @@ body {
   color: rgba(43, 41, 45, 0.6);
 }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=styles.css.map */

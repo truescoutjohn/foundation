@@ -7,7 +7,7 @@
     padding: 0;
   }
 
-  &-content {
+  &__content {
     @media screen and (min-width: calc($tablet + 1px)) {
       display: flex;
       padding: 73px 230px 72px 224px;
