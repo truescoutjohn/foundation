@@ -54,8 +54,12 @@
 }
 
 .addition-navigation {
-  padding: 60px 15px 0;
+  padding: 0 15px;
   margin-bottom: 30px;
+
+  @media screen and (min-width: calc($tablet + 1px)) {
+    padding-top: 60px;
+  }
 
   &__heading {
     margin-bottom: 18px;

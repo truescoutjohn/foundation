@@ -600,8 +600,13 @@ body {
 }
 
 .addition-navigation {
-  padding: 60px 15px 0;
+  padding: 0 15px;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 769px) {
+  .addition-navigation {
+    padding-top: 60px;
+  }
 }
 .addition-navigation__heading {
   margin-bottom: 18px;
