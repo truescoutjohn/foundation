@@ -69,6 +69,9 @@
     position: absolute;
     right: -17px;
     top: 60%;
+    height: 5px;
+    width: 8px;
+    background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png);
   }
 
   @media screen and (min-width: calc($tablet + 1px)) {
