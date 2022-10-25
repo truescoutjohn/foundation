@@ -1,25 +1,35 @@
 .logo {
+  @media screen and (min-width: calc($tablet + 1px)) {
+    &__text {
+      align-items: flex-start;
+    }
+  }
+
   &_footer {
     padding-top: 40px;
+    margin-bottom: 26px;
     flex-direction: column;
     align-items: center;
+
+    @media screen and (min-width: calc($tablet + 1px)) {
+      flex-direction: row;
+    }
   }
 
   &__image_footer {
     margin-bottom: 20px;
     width: 60px;
     height: 60px;
+
+    @media screen and (min-width: calc($tablet + 1px)) {
+      margin-bottom: 0;
+    }
   }
 
   &__name_footer {
+    font-size: 20px;
     text-align: center;
   }
-}
-
-.downloads {
-  padding-top: 31px;
-  margin-bottom: 40px;
-  text-align: center;
 }
 
 .footer {
@@ -43,12 +53,35 @@
     }
   }
 
-  &__info-content {
+  &__content {
     @media screen and (min-width: calc($tablet + 1px)) {
       display: flex;
       column-gap: 126px;
       margin: 0 auto;
       max-width: 81%;
+    }
+  }
+
+  &__downloads {
+    padding-top: 31px;
+    margin-bottom: 40px;
+    text-align: center;
+
+    @media screen and (min-width: calc($tablet + 1px)) {
+      padding-top: 0;
+    }
+  }
+
+  &__info {
+    display: none;
+    margin-bottom: 25px;
+    width: 360px;
+    font-size: 18px;
+    line-height: 26px;
+    color: rgba(43, 41, 45, 0.6);
+
+    @media screen and (min-width: calc($tablet + 1px)) {
+      display: block;
     }
   }
 }
@@ -59,6 +92,10 @@
 
   @media screen and (min-width: calc($tablet + 1px)) {
     padding-top: 60px;
+
+    &__list {
+      line-height: 30px;
+    }
   }
 
   &__heading {
