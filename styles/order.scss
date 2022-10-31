@@ -3,21 +3,22 @@
   padding: 50px 15px;
   text-align: center;
 
-  @media screen and (min-width: calc($tablet + 1px)) {
+  @include toDesktop {
     padding: 0;
   }
 
   &__content {
-    @media screen and (min-width: calc($tablet + 1px)) {
+    @include toDesktop {
       display: flex;
       padding: 73px 230px 72px 224px;
       column-gap: 121px;
     }
   }
 
-  @media screen and (min-width: calc($tablet + 1px)) {
+  @include toDesktop {
     &__right-column {
       flex-basis: 39%;
+      text-align: left;
     }
   }
 
@@ -25,7 +26,7 @@
     width: 200px;
     height: 200px;
 
-    @media screen and (min-width: calc($tablet + 1px)) {
+    @include toDesktop {
       width: 269px;
       height: 296px;
     }
@@ -40,7 +41,7 @@
     letter-spacing: -0.25px;
     color: $fontPrimaryColor;
 
-    @media screen and (min-width: calc($tablet + 1px)) {
+    @include toDesktop {
       margin-top: 33px;
       margin-bottom: 12px;
       text-align: left;
@@ -54,14 +55,14 @@
     line-height: 32px;
     color: $fontPrimaryColor;
 
-    @media screen and (min-width: calc($tablet + 1px)) {
+    @include toDesktop {
       margin-bottom: 26px;
     }
   }
 }
 
 .form {
-  @media screen and (min-width: calc($tablet + 1px)) {
+  @include toDesktop {
     display: flex;
     column-gap: 10px;
   }
@@ -73,22 +74,16 @@
     height: 48px;
     border: 1px solid $borderColorEmailInput;
     border-radius: 2px;
+    font-size: 18px;
+    line-height: 13px;
+    text-align: center;
+    color: $fontPrimaryColor;
 
-    @media screen and (min-width: calc($tablet + 1px)) {
+    @include toDesktop {
       display: flex;
+      padding-left: 15px;
       width: 385px;
-    }
-
-    &::placeholder {
-      font-size: 18px;
-      line-height: 13px;
-      text-align: center;
-      color: $fontPrimaryColor;
-
-      @media screen and (min-width: calc($tablet + 1px)) {
-        padding-left: 15px;
-        text-align: left;
-      }
+      text-align: left;
     }
   }
 

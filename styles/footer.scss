@@ -1,5 +1,5 @@
 .logo {
-  @media screen and (min-width: calc($tablet + 1px)) {
+  @include toDesktop {
     &__text {
       align-items: flex-start;
     }
@@ -7,12 +7,13 @@
 
   &_footer {
     padding-top: 40px;
-    margin-bottom: 26px;
+    margin-bottom: 31px;
     flex-direction: column;
     align-items: center;
 
-    @media screen and (min-width: calc($tablet + 1px)) {
+    @include toDesktop {
       flex-direction: row;
+      margin-bottom: 26px;
     }
   }
 
@@ -21,7 +22,7 @@
     width: 60px;
     height: 60px;
 
-    @media screen and (min-width: calc($tablet + 1px)) {
+    @include toDesktop {
       margin-bottom: 0;
     }
   }
@@ -38,7 +39,7 @@
     border: none;
     border-top: 1px solid $borderFooterColor;
 
-    @media screen and (min-width: calc($tablet + 1px)) {
+    @include toDesktop {
       display: none;
     }
   }
@@ -46,7 +47,7 @@
   &__horizontal-line-desktop {
     display: none;
 
-    @media screen and (min-width: calc($tablet + 1px)) {
+    @include toDesktop {
       display: block;
       border: none;
       border-top: 1px solid $borderFooterColor;
@@ -54,7 +55,7 @@
   }
 
   &__content {
-    @media screen and (min-width: calc($tablet + 1px)) {
+    @include toDesktop {
       display: flex;
       column-gap: 126px;
       margin: 0 auto;
@@ -63,12 +64,11 @@
   }
 
   &__downloads {
-    padding-top: 31px;
     margin-bottom: 40px;
     text-align: center;
 
-    @media screen and (min-width: calc($tablet + 1px)) {
-      padding-top: 0;
+    @include toDesktop {
+      text-align: left;
     }
   }
 
@@ -80,8 +80,18 @@
     line-height: 26px;
     color: rgba(43, 41, 45, 0.6);
 
-    @media screen and (min-width: calc($tablet + 1px)) {
+    @include toDesktop {
       display: block;
+    }
+  }
+
+  &__right-column {
+    display: flex;
+    flex-direction: column;
+
+    @include toDesktop {
+      flex-direction: row;
+      column-gap: 60px;
     }
   }
 }
@@ -90,7 +100,7 @@
   padding: 0 15px;
   margin-bottom: 30px;
 
-  @media screen and (min-width: calc($tablet + 1px)) {
+  @include toDesktop {
     padding-top: 60px;
 
     &__list {
@@ -118,12 +128,15 @@
 
 .socials {
   margin-left: auto;
-
+  display: flex;
   &-wrapper {
     padding: 0 15px;
+    padding-bottom: 23px;
+    min-height: 48px;
 
-    @media screen and (min-width: calc($tablet + 1px)) {
+    @include toDesktop {
       display: flex;
+      align-items: center;
       padding: 0;
       margin: 0 auto;
       max-width: 81%;
@@ -134,12 +147,33 @@
     text-decoration: none;
     margin-right: 20px;
   }
+
+  &__image {
+    display: block;
+    width: 18px;
+    height: 17px;
+
+    &_twitter {
+      background: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/social-twitter.png');
+    }
+
+    &_facebook {
+      background: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/social-fb.png');
+    }
+
+    &_linkedin {
+      background: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/social-linkedIn.png');
+    }
+  }
 }
 
 .external-links {
   display: flex;
   margin-bottom: 31px;
 
+  @include toDesktop {
+    margin-bottom: 0;
+  }
   &__item:not(.external-links__item:last-of-type) {
     margin-right: 22px;
   }

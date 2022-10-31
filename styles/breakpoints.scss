@@ -1,3 +1,21 @@
 $mobile: 320px;
 $tablet: 768px;
 $desktop: 1400px;
+
+@mixin toDesktop {
+  @media screen and (min-width: calc($tablet + 1px)) {
+    @content;
+  }
+}
+
+@mixin toMobile {
+  @media screen and (max-width: $mobile) {
+    @content;
+  }
+}
+
+@mixin toTablet {
+  @media screen and (max-width: $tablet) {
+    @content;
+  }
+}

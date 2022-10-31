@@ -2,6 +2,19 @@
   box-sizing: border-box;
 }
 
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
 body {
   font-family: 'Work Sans';
 }
@@ -11,7 +24,7 @@ body {
   display: flex;
   flex-direction: column;
 
-  @media screen and (min-width: calc($tablet + 1px)) {
+  @include toDesktop {
     max-width: 1400px;
   }
 }
@@ -28,8 +41,9 @@ body {
   font-size: 18px;
   line-height: 13px;
   text-align: center;
+  cursor: pointer;
 
-  @media screen and (min-width: calc($tablet + 1px)) {
+  @include toDesktop {
     width: 160px;
   }
 
@@ -81,6 +95,7 @@ body {
 
   &__name {
     font-weight: 700;
+    font-size: 20px;
   }
 
   &__description {
@@ -88,7 +103,7 @@ body {
     color: $fontPrimaryColor;
     opacity: 0.6;
 
-    @media screen and (min-width: calc($tablet + 1px)) {
+    @include toDesktop {
       display: inline;
     }
 

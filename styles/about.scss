@@ -2,12 +2,12 @@
   padding: 46px 15px;
   background-color: $backgroundAboutColor;
 
-  @media screen and (min-width: calc($tablet + 1px)) {
+  @include toDesktop {
     padding: 77px 0 76px;
   }
 
   &__content {
-    @media screen and (min-width: calc($tablet + 1px)) {
+    @include toDesktop {
       display: flex;
       column-gap: 29px;
       margin: 0 auto;
@@ -20,7 +20,7 @@
       font-size: 22px;
       line-height: 32px;
 
-      @media screen and (min-width: calc($tablet + 1px)) {
+      @include toDesktop {
         flex: 1 1 0;
       }
     }

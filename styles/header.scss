@@ -1,32 +1,30 @@
 .header {
   background-color: $backgroundHeaderColor;
 
-  &__button {
-    display: none;
-    @media screen and (min-width: calc($tablet + 1px)) {
-      display: block;
-    }
-  }
-
   &__wrapper {
     display: flex;
     justify-content: space-between;
     position: relative;
     padding: 8px 15px;
+    background-color: $backgroundHeaderColor;
 
-    @media screen and (min-width: calc($tablet + 1px)) {
+    @include toDesktop {
       margin: 0 auto;
       padding: 0;
       padding-top: 39px;
-      max-width: 81%;
+      padding-bottom: 76px;
+      width: 81%;
     }
 
-    @media screen and (max-width: $tablet) {
+    @include toTablet {
       background-color: #ffffff;
     }
+  }
 
-    @media screen and (min-width: calc($tablet + 1px)) {
-      margin-bottom: 76px;
+  &__button {
+    display: none;
+    @include toDesktop {
+      display: block;
     }
   }
 
@@ -35,7 +33,7 @@
     top: 0;
     right: 0;
     display: flex;
-    padding: 26px 25px 25px 20px;
+    padding: 25px 20px;
     justify-content: center;
     border: none;
     border-left: 1px solid $leftBorderColorBurger;
@@ -43,7 +41,13 @@
     background-color: transparent;
     outline: none;
 
-    @media screen and (min-width: calc($tablet + 1px)) {
+    &-icon {
+      height: 13px;
+      width: 18px;
+      background: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-hamburger.png');
+    }
+
+    @include toDesktop {
       display: none;
     }
   }
@@ -56,7 +60,7 @@
   &__wrapper {
     display: none;
 
-    @media screen and (min-width: calc($tablet + 1px)) {
+    @include toDesktop {
       display: flex;
     }
   }
@@ -74,7 +78,7 @@
     background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png);
   }
 
-  @media screen and (min-width: calc($tablet + 1px)) {
+  @include toDesktop {
     &__link {
       display: block;
       padding-top: 7px;
