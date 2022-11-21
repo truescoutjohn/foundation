@@ -6,24 +6,21 @@
     justify-content: space-between;
     position: relative;
     padding: 8px 15px;
-    background-color: $backgroundHeaderColor;
+    background-color: $backgroundMobileHeaderColor;
 
-    @include toDesktop {
+    @include to-desktop {
       margin: 0 auto;
       padding: 0;
       padding-top: 39px;
       padding-bottom: 76px;
       width: 81%;
-    }
-
-    @include toTablet {
-      background-color: #ffffff;
+      background-color: $backgroundHeaderColor;
     }
   }
 
   &__button {
     display: none;
-    @include toDesktop {
+    @include to-desktop {
       display: block;
     }
   }
@@ -41,15 +38,15 @@
     background-color: transparent;
     outline: none;
 
-    &-icon {
-      height: 13px;
-      width: 18px;
-      background: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-hamburger.png');
-    }
-
-    @include toDesktop {
+    @include to-desktop {
       display: none;
     }
+  }
+
+  &__burger-icon {
+    height: 13px;
+    width: 18px;
+    background: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-hamburger.png');
   }
 }
 
@@ -60,7 +57,7 @@
   &__wrapper {
     display: none;
 
-    @include toDesktop {
+    @include to-desktop {
       display: flex;
     }
   }
@@ -78,7 +75,7 @@
     background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png);
   }
 
-  @include toDesktop {
+  @include to-desktop {
     &__link {
       display: block;
       padding-top: 7px;

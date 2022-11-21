@@ -3,19 +3,19 @@
   padding: 50px 15px;
   text-align: center;
 
-  @include toDesktop {
+  @include to-desktop {
     padding: 0;
   }
 
   &__content {
-    @include toDesktop {
+    @include to-desktop {
       display: flex;
       padding: 73px 230px 72px 224px;
       column-gap: 121px;
     }
   }
 
-  @include toDesktop {
+  @include to-desktop {
     &__right-column {
       flex-basis: 39%;
       text-align: left;
@@ -26,7 +26,7 @@
     width: 200px;
     height: 200px;
 
-    @include toDesktop {
+    @include to-desktop {
       width: 269px;
       height: 296px;
     }
@@ -41,7 +41,7 @@
     letter-spacing: -0.25px;
     color: $fontPrimaryColor;
 
-    @include toDesktop {
+    @include to-desktop {
       margin-top: 33px;
       margin-bottom: 12px;
       text-align: left;
@@ -55,14 +55,14 @@
     line-height: 32px;
     color: $fontPrimaryColor;
 
-    @include toDesktop {
+    @include to-desktop {
       margin-bottom: 26px;
     }
   }
 }
 
 .form {
-  @include toDesktop {
+  @include to-desktop {
     display: flex;
     column-gap: 10px;
   }
@@ -79,7 +79,7 @@
     text-align: center;
     color: $fontPrimaryColor;
 
-    @include toDesktop {
+    @include to-desktop {
       display: flex;
       padding-left: 15px;
       width: 385px;

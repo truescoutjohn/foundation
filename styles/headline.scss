@@ -2,7 +2,7 @@
   position: relative;
   background-color: $backgroundHeaderColor;
 
-  @include toDesktop {
+  @include to-desktop {
     padding-bottom: 126px;
   }
 
@@ -12,7 +12,7 @@
     margin-top: 35px;
     padding: 0 15px;
 
-    @include toDesktop {
+    @include to-desktop {
       margin: 0 auto;
       padding: 0;
       max-width: 81%;
@@ -27,7 +27,7 @@
     letter-spacing: -0.3125px;
     color: $fontPrimaryColor;
 
-    @include toDesktop {
+    @include to-desktop {
       width: 754px;
       font-size: 80px;
       line-height: 78px;
@@ -41,7 +41,7 @@
     line-height: 34px;
     color: $fontPrimaryColor;
 
-    @include toDesktop {
+    @include to-desktop {
       width: 456px;
       margin-bottom: 58px;
     }
@@ -50,7 +50,7 @@
   &__image {
     width: 100%;
 
-    @include toDesktop {
+    @include to-desktop {
       position: absolute;
       z-index: 1;
       top: 0;
@@ -68,7 +68,7 @@
       }
     }
 
-    @include toDesktop {
+    @include to-desktop {
       margin-bottom: 0;
       &:first-of-type {
         margin-right: 10px;

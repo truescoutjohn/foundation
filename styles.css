@@ -105,7 +105,7 @@ body {
   justify-content: space-between;
   position: relative;
   padding: 8px 15px;
-  background-color: #f3c6bd;
+  background-color: #ffffff;
 }
 @media screen and (min-width: 769px) {
   .header__wrapper {
@@ -114,11 +114,7 @@ body {
     padding-top: 39px;
     padding-bottom: 76px;
     width: 81%;
-  }
-}
-@media screen and (max-width: 768px) {
-  .header__wrapper {
-    background-color: #ffffff;
+    background-color: #f3c6bd;
   }
 }
 .header__button {
@@ -142,15 +138,15 @@ body {
   background-color: transparent;
   outline: none;
 }
-.header__burger-icon {
-  height: 13px;
-  width: 18px;
-  background: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-hamburger.png");
-}
 @media screen and (min-width: 769px) {
   .header__burger {
     display: none;
   }
+}
+.header__burger-icon {
+  height: 13px;
+  width: 18px;
+  background: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-hamburger.png");
 }
 
 .navigation {
@@ -311,13 +307,14 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  padding: 30px 0 81px;
+  padding-bottom: 81px;
 }
 @media screen and (min-width: 769px) {
   .customers {
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
+    padding: 30px 0;
     max-width: 81%;
     row-gap: 0px;
   }
@@ -340,10 +337,11 @@ body {
 .customers__logo {
   max-width: 100%;
   filter: brightness(0%);
+  transform: scale(0.75);
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 769px) {
   .customers__logo {
-    transform: scale(0.75);
+    transform: scale(1);
   }
 }
 
@@ -628,6 +626,7 @@ body {
 @media screen and (min-width: 769px) {
   .footer__horizontal-line-desktop {
     display: block;
+    margin: 0;
     border: none;
     border-top: 1px solid #e3e3e3;
   }
@@ -701,10 +700,6 @@ body {
   color: rgba(43, 41, 45, 0.6);
 }
 
-.socials {
-  margin-left: auto;
-  display: flex;
-}
 .socials-wrapper {
   padding: 0 15px;
   padding-bottom: 23px;
@@ -718,6 +713,11 @@ body {
     margin: 0 auto;
     max-width: 81%;
   }
+}
+
+.socials {
+  margin-left: auto;
+  display: flex;
 }
 .socials__link {
   text-decoration: none;

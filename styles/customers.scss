@@ -2,12 +2,13 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  padding: 30px 0 81px;
+  padding-bottom: 81px;
 
-  @include toDesktop {
+  @include to-desktop {
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
+    padding: 30px 0;
     max-width: 81%;
     row-gap: 0px;
   }
@@ -21,7 +22,7 @@
     background-color: #fff;
     border: 1px solid rgba(200, 200, 200, 0.5);
 
-    @include toDesktop {
+    @include to-desktop {
       flex-basis: auto;
       border: none;
     }
@@ -30,9 +31,10 @@
   &__logo {
     max-width: 100%;
     filter: brightness(0%);
+    transform: scale(0.75);
 
-    @include toTablet {
-      transform: scale(0.75);
+    @include to-desktop {
+      transform: scale(1);
     }
   }
 }

@@ -1,5 +1,5 @@
 .logo {
-  @include toDesktop {
+  @include to-desktop {
     &__text {
       align-items: flex-start;
     }
@@ -11,25 +11,29 @@
     flex-direction: column;
     align-items: center;
 
-    @include toDesktop {
+    @include to-desktop {
       flex-direction: row;
       margin-bottom: 26px;
     }
   }
 
-  &__image_footer {
-    margin-bottom: 20px;
-    width: 60px;
-    height: 60px;
+  &__image {
+    &_footer {
+      margin-bottom: 20px;
+      width: 60px;
+      height: 60px;
 
-    @include toDesktop {
-      margin-bottom: 0;
+      @include to-desktop {
+        margin-bottom: 0;
+      }
     }
   }
 
-  &__name_footer {
-    font-size: 20px;
-    text-align: center;
+  &__name {
+    &_footer {
+      font-size: 20px;
+      text-align: center;
+    }
   }
 }
 
@@ -39,7 +43,7 @@
     border: none;
     border-top: 1px solid $borderFooterColor;
 
-    @include toDesktop {
+    @include to-desktop {
       display: none;
     }
   }
@@ -47,15 +51,16 @@
   &__horizontal-line-desktop {
     display: none;
 
-    @include toDesktop {
+    @include to-desktop {
       display: block;
+      margin: 0;
       border: none;
       border-top: 1px solid $borderFooterColor;
     }
   }
 
   &__content {
-    @include toDesktop {
+    @include to-desktop {
       display: flex;
       column-gap: 126px;
       margin: 0 auto;
@@ -67,7 +72,7 @@
     margin-bottom: 40px;
     text-align: center;
 
-    @include toDesktop {
+    @include to-desktop {
       text-align: left;
     }
   }
@@ -80,7 +85,7 @@
     line-height: 26px;
     color: rgba(43, 41, 45, 0.6);
 
-    @include toDesktop {
+    @include to-desktop {
       display: block;
     }
   }
@@ -89,7 +94,7 @@
     display: flex;
     flex-direction: column;
 
-    @include toDesktop {
+    @include to-desktop {
       flex-direction: row;
       column-gap: 60px;
     }
@@ -100,7 +105,7 @@
   padding: 0 15px;
   margin-bottom: 30px;
 
-  @include toDesktop {
+  @include to-desktop {
     padding-top: 60px;
 
     &__list {
@@ -126,22 +131,23 @@
   }
 }
 
+.socials-wrapper {
+  padding: 0 15px;
+  padding-bottom: 23px;
+  min-height: 48px;
+
+  @include to-desktop {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 81%;
+  }
+}
+
 .socials {
   margin-left: auto;
   display: flex;
-  &-wrapper {
-    padding: 0 15px;
-    padding-bottom: 23px;
-    min-height: 48px;
-
-    @include toDesktop {
-      display: flex;
-      align-items: center;
-      padding: 0;
-      margin: 0 auto;
-      max-width: 81%;
-    }
-  }
 
   &__link {
     text-decoration: none;
@@ -171,7 +177,7 @@
   display: flex;
   margin-bottom: 31px;
 
-  @include toDesktop {
+  @include to-desktop {
     margin-bottom: 0;
   }
   &__item:not(.external-links__item:last-of-type) {

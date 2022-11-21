@@ -2,12 +2,12 @@
   padding: 46px 15px;
   background-color: $backgroundAboutColor;
 
-  @include toDesktop {
+  @include to-desktop {
     padding: 77px 0 76px;
   }
 
   &__content {
-    @include toDesktop {
+    @include to-desktop {
       display: flex;
       column-gap: 29px;
       margin: 0 auto;
@@ -15,23 +15,21 @@
     }
   }
 
-  &__block {
-    &-wrapper {
-      font-size: 22px;
-      line-height: 32px;
+  &__block-wrapper {
+    font-size: 22px;
+    line-height: 32px;
 
-      @include toDesktop {
-        flex: 1 1 0;
-      }
+    @include to-desktop {
+      flex: 1 1 0;
     }
+  }
 
-    &-heading {
-      font-weight: 700;
-      margin-bottom: 10px;
-    }
+  &__block-heading {
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
 
-    &-description {
-      margin-bottom: 20px;
-    }
+  &__block-description {
+    margin-bottom: 20px;
   }
 }
