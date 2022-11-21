@@ -1,6 +1,6 @@
 # Foundation
 
-### [Site link](https://truscoutjohn.github.io/foundation/)
+### [Site link](https://truescoutjohn.github.io/foundation/)
 
 Layout supports mobile (up-to-768) and desktop (up-to-1400) versions
 
