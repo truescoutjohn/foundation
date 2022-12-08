@@ -88,16 +88,17 @@
 
 .features {
   display: flex;
-  flex-direction: column;
+  column-gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
 
   &__buttons {
     margin-bottom: 111px;
   }
 
   @include to-desktop {
-    flex-direction: row;
     justify-content: space-between;
-    column-gap: 30px;
+    flex-wrap: nowrap;
     max-width: 81%;
     margin: 0 auto;
   }

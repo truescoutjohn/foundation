@@ -2,15 +2,18 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  padding-bottom: 81px;
+  justify-content: center;
+  gap: 1px;
+  background-color: $backgroundCustomerColorMobile;
 
   @include to-desktop {
     justify-content: space-between;
     align-items: center;
+    row-gap: 0px;
     margin: 0 auto;
     padding: 30px 0;
     max-width: 81%;
-    row-gap: 0px;
+    background-color: $backgroundCustomerColorDesktop;
   }
 
   &__wrapper-logo {
@@ -19,8 +22,8 @@
     align-items: center;
     flex-basis: 106px;
     height: 94px;
-    background-color: #fff;
-    border: 1px solid rgba(200, 200, 200, 0.5);
+    background-color: $backgroundCustomerWrapperLogo;
+    // border: 1px solid rgba(200, 200, 200, 0.5);
 
     @include to-desktop {
       flex-basis: auto;

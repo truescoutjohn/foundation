@@ -10,8 +10,10 @@
   &__content {
     @include to-desktop {
       display: flex;
-      padding: 73px 230px 72px 224px;
+      flex-wrap: wrap;
+      justify-content: center;
       column-gap: 121px;
+      padding: 73px 230px 72px 224px;
     }
   }
 
